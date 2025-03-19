@@ -16,7 +16,7 @@ public class MahasiswaDemo19 {
             System.out.print("Masukkan IPK   : ");
             double ipk = sc.nextDouble();
             sc.nextLine(); 
-            
+
             Mahasiswa19 m = new Mahasiswa19(nim, nama, kelas, ipk);
             list.tambah(m);
             System.out.println();
@@ -25,8 +25,8 @@ public class MahasiswaDemo19 {
         System.out.println("Data Mahasiswa sebelum Sorting : ");
         list.tampil();
 
-        System.out.println("Data Mahasiswa setelah Sorting berdasarkan IPK (DESC) : ");
-        list.bubbleSort();
+        System.out.println("Data yang sudah terurut menggunakan SELECTION SORT (ASC) : ");
+        list.selectionSort();
         list.tampil();
 
         sc.close();
